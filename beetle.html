@@ -18,34 +18,35 @@
         <h2>The Full Picture Set</h2>
         <div class="picture-stack">
             <div class="picture-set">
-                <img src="vw beetle/Screenshot-2025-07-09-080622.jpg">
+                <img src="vw beetle/Screenshot-2025-07-09-080622.jpg" onclick="openFullscreen(this)">
             </div>
             <div class="picture-set">
-                <img src="vw beetle/Screenshot-2025-07-09-080657.jpg">
+                <img src="vw beetle/Screenshot-2025-07-09-080657.jpg" onclick="openFullscreen(this)"> 
             </div>
             <div class="picture-set">
-                <img src="vw beetle/Screenshot-2025-07-09-080726.jpg">
+                <img src="vw beetle/Screenshot-2025-07-09-080726.jpg" onclick="openFullscreen(this)">
             </div>
             <div class="picture-set">
-                <img src="vw beetle/Screenshot-2025-07-09-082235-2.jpg">
+                <img src="vw beetle/Screenshot-2025-07-09-082235-2.jpg" onclick="openFullscreen(this)">
             </div>
             <div class="picture-set">
-                <img src="vw beetle/Screenshot-2025-07-09-082349.jpg">
+                <img src="vw beetle/Screenshot-2025-07-09-082349.jpg" onclick="openFullscreen(this)">
             </div>
             <div class="picture-set">
-                <img src="vw beetle/Screenshot-2025-07-09-082435.jpg">
+                <img src="vw beetle/Screenshot-2025-07-09-082435.jpg" onclick="openFullscreen(this)">
             </div>
             <div class="picture-set">
-                <img src="vw beetle/Screenshot-2025-07-09-082502.jpg">
+                <img src="vw beetle/Screenshot-2025-07-09-082502.jpg" onclick="openFullscreen(this)">
             </div>
             <div class="picture-set">
-                <img src="vw beetle/Screenshot-2025-07-09-083608.jpg">
+                <img src="vw beetle/Screenshot-2025-07-09-083608.jpg"onclick="openFullscreen(this)">
             </div>
             <div class="picture-set">
-                <img src="vw beetle/Screenshot-2025-07-09-084341.jpg">
+                <img src="vw beetle/Screenshot-2025-07-09-084341.jpg" onclick="openFullscreen(this)">
             </div>
+
             <div class="picture-set">
-                <img src="vw beetle/Screenshot-2025-07-09-084603.jpg">
+                <img src="vw beetle/Screenshot-2025-07-09-084603.jpg" onclick="openFullscreen(this)">
             </div>
         </div>
     </section>
@@ -59,7 +60,7 @@
         function openFullscreen(imgElement){
             const ovrly =document.getElementById("fullscreen-ovrly");
             const fullImg=document.getElementById("fullscreen-img") ;
-            overlay.style.display="flex";
+            ovrly.style.display="flex";
             fullImg.src=imgElement.src;
         }
         function closeFullscreen(){
