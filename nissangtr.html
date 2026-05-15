@@ -11,6 +11,51 @@
         <h1>Nissan R34 GT-R</h1>
         <p>Taken on Forza Motorsport(Nürburgring)</p>
     </header>
-    <a href ="photography.html" class="button-link" id="backtomainpage"></a>
+    <a href ="photography.html" class="button-link" id="backtomainpage">Back to Showcase</a>
+
+    <section>
+        <div class="picture-stack">
+            <div class="picture-set">
+                <img src="nissangtr/Screenshot 2025-11-29 114203.jpg" onclick="openFullscreen(this)">
+            </div>
+            <div class="picture-set">
+                <img src="nissangtr/Screenshot 2025-11-29 115354.jpg"onclick="openFullscreen(this)">
+            </div>
+            <div class="picture-set">
+                <img src="nissangtr/Screenshot 2025-11-29 115232.jpg"onclick="openFullscreen(this)">
+            </div>
+            <div class="picture-set">
+                <img src="nissangtr/Screenshot 2025-11-29 113407.jpg" onclick="openFullscreen(this)">
+            </div>
+            <div class="picture-set">
+                <img src="nissangtr/Screenshot 2025-11-29 113629.jpg"onclick="openFullscreen(this)">
+            </div>
+            <div class="picture-set">
+                <img src="nissangtr/Screenshot 2025-11-29 115628.jpg" onclick="openFullscreen(this)">
+            </div>
+            <div class="picture-set">
+                <img src="nissangtr/Screenshot 2025-11-29 120519.jpg" onclick="openFullscreen(this)">
+            </div>
+            <div class="picture-set">
+                <img src="nissangtr/Screenshot 2025-11-29 120436.jpg" onclick="openFullscreen(this)">
+            </div>
+        </div>
+    </section>
+    <div id="fullscreen-ovrly" onclick="closeFullscreen()">
+        <span class="close-btn">&times;</span>
+        <img id="fullscreen-img">
+    </div>
+    <script>
+        function openFullscreen(imgElement){
+            const ovrly =document.getElementById("fullscreen-ovrly");
+            const fullImg=document.getElementById("fullscreen-img") ;
+            ovrly.style.display="flex";
+            fullImg.src=imgElement.src;
+        }
+        function closeFullscreen(){
+            document.getElementById("fullscreen-ovrly").style.display="none";
+        }
+    </script>
+
 </body>
 </html>
