@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    max-width: 800px;
+    max-width: 1100px;
     margin:40px auto;
     padding: 0 20px;
     background-color:#F4F1EA;
@@ -10,11 +10,13 @@ body {
 
 header{
     text-align: center;
-    padding: 40px 20px;
+    padding: 60px 20px;
     background-color: #E3DACD;
     color: white;
     border-radius:10px;
     margin-bottom: 25px;
+    position:relative;
+    
 }
 
 section, footer{
@@ -22,6 +24,7 @@ section, footer{
     padding: 25px;
     margin-bottom:20px;
     border-radius:10px;
+    
 }
 
 h1,h2, h3{
@@ -123,10 +126,9 @@ h1{
    position:fixed;
    top: 35px;
    left: 20px;
-   z-index: 9999;
+   z-index: 1000;
    margin: 0;
+   
 }
-
-
 
 
