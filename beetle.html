@@ -49,5 +49,22 @@
             </div>
         </div>
     </section>
+
+    <div id="fullscreen-ovrly" onclick="closeFullscreen()">
+        <span class="close-btn">&times;</span>
+        <img id="fullscreen-img">
+    </div>
+
+    <script>
+        function openFullscreen(imgElement){
+            const ovrly =document.getElementById("fullscreen-ovrly");
+            const fullImg=document.getElementById("fullscreen-img") ;
+            overlay.style.display="flex";
+            fullImg.src=imgElement.src;
+        }
+        function closeFullscreen(){
+            document.getElementById("fullscreen-ovrly").style.display="none";
+        }
+    </script>
 </body>
 </html>
