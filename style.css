@@ -5,6 +5,7 @@ body {
     padding: 0 20px;
     background-color:#F4F1EA;
     color: #e3e9f0;
+    position:relative;
 }
 
 header{
@@ -119,5 +120,13 @@ h1{
 }
 
 #backtomainpage{
-    color:black;
+   position:fixed;
+   top: 35px;
+   left: 20px;
+   z-index: 9999;
+   margin: 0;
 }
+
+
+
+
